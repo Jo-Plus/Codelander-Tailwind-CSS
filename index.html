@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Jo+</title>
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/tailwind.css" />
+  <link rel="stylesheet" href="css/flowbite.min.css">
+</head>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .head .img {
+    animation: up 2s linear infinite;
+  }
+
+  @keyframes up {
+
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-40px);
+    }
+  }
+
+  ::selection {
+    background-color: #b3bcf5;
+  }
+
+  .up {
+    transition: 0.3s;
+  }
+
+  .up:hover {
+    background-color: #e5e7eb;
+    border: 1px solid rgb(180, 180, 240);
+    border-radius: 6px;
+    transform: translateY(-15px);
+  }
+</style>
+
+<body class="font-sans bg-gray-100">
+  <nav class=" dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="#"
+        class="flex items-center space-x-3 rtl:space-x-reverse bg-blue-500 px-3 rounded-md	hover:bg-blue-800 bg-blue-700">
+        <img src="images/JO-2-Logo-Only-White.png" class="h-12" alt="Flowbite Logo">
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:bg-blue-600 text-white">چو بلس</span>
+      </a>
+      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <button type="button"
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Signup</button>
+        <button data-collapse-toggle="navbar-sticky" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+      </div>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul
+          class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="#Home"
+              class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+              aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="#Service"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+          </li>
+          <li>
+            <a href="#Pricing"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Pricing</a>
+          </li>
+          <li>
+            <a href="#News"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">News</a>
+          </li>
+          <li>
+            <a href="#Contact"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+          </li>
+          <li>
+            <a href="#Send"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Message</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ======================================================================= -->
+  <header
+    class=" container mx-auto grid grid-cols-1 lg:grid-cols-2 text-center lg:text-start  mx-auto my-32 justify-center items-center"
+    id="Home">
+    <div class="justify-center head flex items-center md:grid-cols-1"><img class="h-auto img" src="images/header.png"
+        alt="" /></div>
+    <div class="font-thin font-sans space-y-8">
+      <h2 class="text-3xl font-bold">Multipurpose Landing Template</h2>
+      <h1 class="text-6xl font-bold" style="color: #303669">Beautififully</h1>
+      <h1 class="text-6xl font-bold">Simple, Code.</h1>
+      <h3 class="text-2xl tracking-wider ">
+        Codelander is a beautifully simple, clean and lightweight landing page
+        template for all types of businesses, with bold and bright colours.
+      </h3>
+      <button class="bg-pink-500 text-white px-20 py-5 hover:bg-blue-500 rounded-full text-3xl">Learn More</button>
+    </div>
+  </header>
+  <!-- ======================================================================= -->
+  <div class="relative container mx-auto ">
+    <img src="images/strategy-section-bg.png" alt="" class="absolute w-72" style="top: -150px; right: 0px;">
+    <div
+      class="text-center text-gray-600 mt-20 mb-20 justify-between items-center grid grid-cols-1 md:grid-cols-2 xl:max-2xl:grid-cols-4">
+      <div class="flex-col items-center space-y-3 up px-5 py-3">
+        <img src="images/strategy-1.png" alt="" class="m-auto" />
+        <h2 class="text-xl font-bold" style="color: #303669">Strategy</h2>
+        <p>We'll work with you</p>
+        <p>to develop the right strategy</p>
+      </div>
+      <div class="flex-col items-center space-y-3 up px-5 py-3">
+        <img src="images/strategy-2.png" alt="" class="m-auto" />
+        <h2 class="text-xl font-bold" style="color: #303669">Automation</h2>
+        <p>Work synchronization</p>
+        <p>and automated services work</p>
+      </div>
+      <div class="flex-col items-center space-y-3 up px-5 py-3">
+        <img src="images/strategy-3.png" alt="" class="m-auto" />
+        <h2 class="text-xl font-bold" style="color: #303669">Strategy</h2>
+        <p>We'll work with you</p>
+        <p>to develop the right strategy</p>
+      </div>
+      <div class="flex-col items-center space-y-3 up px-5 py-3">
+        <img src="images/strategy-4.png" alt="" class="m-auto" />
+        <h2 class="text-xl font-bold" style="color: #303669">Strategy</h2>
+        <p>We'll work with you</p>
+        <p>to develop the right strategy</p>
+      </div>
+    </div>
+  </div>
+  <!-- ======================================================================= -->
+  <div class="services relative my-36 container mx-auto " id="Service">
+    <img src="images/services-section-bg.png" alt="" class="absolute w-72 overflow-hidden"
+      style="    left: -80px; top: -137px;">
+    <h1 class="text-6xl m-auto block p-5" style="border-bottom: 1px solid #303669; width: fit-content; color: #303669;">
+      Services</h1>
+    <div class="grid grid-cols-1 lg:grid-cols-2 text-center lg:text-start   mx-auto my-32 justify-center items-center">
+      <div class="justify-center flex items-center">
+        <img src="images/services-sales-header.png" alt="" class="hover:scale-105">
+      </div>
+      <div>
+        <h3 class="font-bold text-2xl">Our services</h3>
+        <h1 class="text-6xl font-bold mb-7" style="color: #303669;">Sales Growth</h1>
+        <p class="text-2xl tracking-wider mb-5">You can talk about your secondary services here, or maybe promote your
+          excellent customer service approach. Always grab your website visitors' attention.</p>
+        <a href="#Pricing">
+          <button class="bg-pink-500 text-white px-20 py-5 hover:bg-blue-500 rounded-full text-3xl">View
+            Pricing</button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- ======================================================================= -->
+  <div class="my-20 text-center relative container mx-auto " id="Pricing">
+    <img src="images/pricing-section-right-bg.png" alt="" class="absolute w-72 overflow-hidden"
+      style="    left: -80px; top: -55px;">
+    <h1 class="text-6xl mb-5" style="color: #303669">Pricing</h1>
+    <p class="font-thin">
+      Offer multiple packages or monthly subscriptions? Why not showcase your
+      featured price plans here, bold and beautifully.
+    </p>
+    <p class="font-thin">
+      Why not showcase your featured price plans here, bold and beautifully.
+    </p>
+    <!-- <div class="grid grid-cols-3 gap-3 px-60 mx-auto my-10" style="height: 60vh;"> -->
+    <div
+      class="text-center text-gray-600 mt-20 mb-5 px-auto justify-between items-center grid grid-cols-1 lg:grid-cols-3 justify-items-center">
+      <div class="bg-white rounded-3xl w-80 mt-5 mb-5 hover:shadow-2xl up text-center" style="height: 411px;">
+        <h1 class="text-5xl" style="color: #303669;">$199</h1>
+        <h2 class="text-blue-400">Basic</h2>
+        <p class="mt-4 font-bold">Starter plan with all the basics</p>
+        <p class="mb-4 font-bold">included</p>
+        <ul class="ml-5">
+          <div class="flex justify-start items-center mb-3">
+            <i class="fas fa-check-circle fill-current text-blue-500 mr-5"></i>
+            <li>Core Business System</li>
+          </div>
+          <div class="flex justify-start items-center mb-3">
+            <i class="fas fa-check-circle fill-current text-blue-500 mr-5"></i>
+            <li>Team Management</li>
+          </div>
+          <div class="flex justify-start items-center mb-3">
+            <i class="fas fa-circle fill-current text-gray-300 mr-5"></i>
+            <li>Dual Infrastructure</li>
+          </div>
+          <div class="flex justify-start items-center mb-7">
+            <i class="fas fa-circle fill-current text-gray-300 mr-5"></i>
+            <li>Customized Features</li>
+          </div>
+        </ul>
+        <button class="bg-pink-500 text-white px-10 py-3 hover:bg-blue-500 rounded-full mb-5">Enquire</button>
+      </div>
+      <div
+        class="bg-white rounded-3xl min-h-96 lg:max-2xl:mb-5 w-80 hover:shadow-2xl hover:bg-gray-200 border-blue-400 border-dashed"
+        style="border-width: 10px; height: 450px;">
+        <h1 class="text-5xl" style="color: #303669;">$599</h1>
+        <h2 class="text-blue-400">Growth</h2>
+        <p class="mt-4 font-bold">Starter plan with all the basics</p>
+        <p class="mb-4 font-bold">included</p>
+        <ul class="ml-5">
+          <div class="flex justify-start items-center mb-3">
+            <i class="fas fa-check-circle fill-current text-blue-500 mr-5"></i>
+            <li>Core Business System</li>
+          </div>
+          <div class="flex justify-start items-center mb-3">
+            <i class="fas fa-check-circle fill-current text-blue-500 mr-5"></i>
+            <li>Team Management</li>
+          </div>
+          <div class="flex justify-start items-center mb-3">
+            <i class="fas fa-check-circle fill-current text-blue-500 mr-5"></i>
+            <li>Team Management</li>
+          </div>
+          <div class="flex justify-start items-center mb-3">
+            <i class="fas fa-circle fill-current text-gray-300 mr-5"></i>
+            <li>Dual Infrastructure</li>
+          </div>
+          <div class="flex justify-start items-center mb-7">
+            <i class="fas fa-circle fill-current text-gray-300 mr-5"></i>
+            <li>Customized Features</li>
+          </div>
+        </ul>
+        <button class="bg-pink-500 text-white px-10 py-3 hover:bg-blue-500 rounded-full mb-5">Enquire</button>
+      </div>
+      <div class="bg-white rounded-3xl w-80 mt-5 hover:shadow-2xl mb-5  up" style="height: 411px;">
+        <h1 class="text-5xl" style="color: #303669;">$599</h1>
+        <h2 class="text-blue-400">Growth</h2>
+        <p class="mt-4 font-bold">Starter plan with all the basics</p>
+        <p class="mb-4 font-bold">included</p>
+        <ul class="ml-5">
+          <div class="flex justify-start items-center mb-3">
+            <i class="fas fa-check-circle fill-current text-blue-500 mr-5"></i>
+            <li>Core Business System</li>
+          </div>
+          <div class="flex justify-start items-center mb-3">
+            <i class="fas fa-check-circle fill-current text-blue-500 mr-5"></i>
+            <li>Team Management</li>
+          </div>
+          <div class="flex justify-start items-center mb-3">
+            <i class="fas fa-check-circle fill-current text-blue-500 mr-5"></i>
+            <li>Dual Infrastructure</li>
+          </div>
+          <div class="flex justify-start items-center mb-7">
+            <i class="fas fa-check-circle fill-current text-blue-500 mr-5"></i>
+            <li>Customized Features</li>
+          </div>
+        </ul>
+        <button class="bg-pink-500 text-white px-10 py-3 hover:bg-blue-500 rounded-full mb-5">Enquire</button>
+      </div>
+    </div>
+  </div>
+  <!-- ======================================================================= -->
+  <div class="mt-36 text-center relative container mx-auto " id="News">
+    <img src="images/pricing-section-left-bg.png" alt="" class="absolute w-72" style="top: -85px; right: 0px;">
+    <h1 class="text-6xl mb-5 mt-5" style="color: #303669">News</h1>
+    <p class="font-thin">
+      Why not showcase your featured price plans here, bold and beautifully.
+    </p>
+    <p class="font-thin text-2xl">
+      Recent updates
+    </p>
+    <!-- <div class="grid grid-cols-3 gap-3 px-60 mx-auto" style="height: 60vh;"> -->
+    <div>
+      <div
+        class="text-center text-gray-600 mt-20 mb-5 px-auto justify-between items-center grid grid-cols-1 lg:grid-cols-3 justify-items-center">
+        <div class="bg-white rounded-3xl w-80 mt-5 mb-5 hover:shadow-2xl text-center" style="height: 420px;">
+          <img src="images/blog-card-1.png" alt="" class="m-auto">
+          <h2 class="text-blue-400 text-2xl">Remote Working</h2>
+          <p class="mt-4 font-thin px-4 mb-3" style="color: #303669;">Making it easier to connect with every client
+            worldwide</p>
+          <button class="bg-pink-500 text-white px-10 py-3 hover:bg-blue-500 rounded-full mb-5">Read More</button>
+        </div>
+        <div class="bg-white rounded-3xl min-h-96  lg:max-2xl:mb-5 w-80 hover:shadow-2xl border-2 border-solid	"
+          style="height: 480px;border-color: #78c2ff;">
+          <img src="images/blog-card-2.png" alt="" class="m-auto">
+          <h3 class="text-2xl" style="color: #303669;">Google Rankings</h3>
+          <h2 class="text-blue-400">Growth</h2>
+          <p class="mt-4 font-thin px-4 mb-3" style="color: #303669;">We've ranked number one on Google for multiple
+            keywords. Read about our SEO strategies</p>
+          <button class="bg-pink-500 text-white px-10 py-3 hover:bg-blue-500 rounded-full mb-5">Read More</button>
+        </div>
+        <div class="bg-white rounded-3xl w-80 mt-5 mb-5 hover:shadow-2xl" style="height: 420px;">
+          <img src="images/blog-card-3.png" alt="" class="m-auto">
+          <h2 class="text-blue-400 text-2xl">Communication</h2>
+          <p class="mt-4 font-thin px-4 mb-3" style="color: #303669;">We've made our client support services easy to
+            access</p>
+          <button class="bg-pink-500 text-white px-10 py-3 hover:bg-blue-500 rounded-full mb-5">Read More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ======================================================================= -->
+  <div class="mt-32 relative container mx-auto ">
+    <img src="images/blog-section-left-bg.png" alt="" class="absolute w-60" style="top: -20%; left: 20px;">
+    <h1 class="text-6xl m-auto block p-5" style="border-bottom: 1px solid #303669; width: fit-content; color: #303669;">
+      Message</h1>
+    <div
+      class="grid grid-cols-1 lg:grid-cols-2 text-center lg:text-start px-10  mx-auto my-32 justify-center items-center"
+      id="Send">
+      <div class="justify-center head flex items-center"><img class="h-auto img" src="images/contact-header-img.png">
+      </div>
+      <div class="font-thin font-sans space-y-8">
+        <h2 class="text-3xl">Contact :</h2>
+        <h1 class="text-6xl font-bold" style="color: #303669">Questions?</h1>
+        <h1 class="text-6xl font-bold">Get in touch</h1>
+        <h3 class="text-2xl tracking-wider ">
+          We'll be happy to help answer any of your questions. Send us an email and we'll get back to you shortly
+        </h3>
+        <button class="bg-pink-500 text-white px-20 py-5 hover:bg-blue-500 rounded-full text-3xl">Send An Email</button>
+      </div>
+    </div>
+  </div>
+  <!-- ======================================================================= -->
+  <div class="footer text-white " style=" background-color: #303669; padding: 30px;" id="Contact">
+    <h1 class="text-6xl mb-5 mt-5 text-white text-center block m-auto p-2"
+      style="border-bottom: 1px solid white; width: fit-content;">Contact Us</h1>
+    <div
+      class=" container mx-auto text-center xl:max-2xl:text-left px-auto items-center grid grid-cols-1 md:max-lg:grid-cols-2 lg:grid-cols-4 justify-items-center gap-5">
+      <div class="mb-6">
+        <a href="#">
+          <img src="images/JO-2-Logo-Only-White.png" alt="" class="h-14 hover:bg-blue-500 rounded-md m-auto">
+        </a>
+        <p class="text-sm mb-5">A beautiful landing page template by Codefest.</p>
+      </div>
+      <div class="mt-2 mb-5">
+        <h1 class="text-4xl mb-2">About</h1>
+        <p class="text-sm">We like to do business at Codelander HQ to our clients' satisfaction.</p>
+      </div>
+      <div class="mt-9">
+        <h1 class="text-4xl mb-2">Contact Us</h1>
+        <div class="flex mb-2 text-left">
+          <i class="fas fa-search-location mr-2 fill-current text-blue-500"></i>
+          <p class="text-sm">We like to do business at Codelander HQ to our clients' satisfaction.</p>
+        </div>
+        <div class="flex mb-2">
+          <i class="fas fa-phone mr-2 fill-current text-blue-500"></i>
+          <p class="text-sm">0923 563 780</p>
+        </div>
+        <div class="flex mb-2">
+          <i class="fas fa-envelope mr-2 fill-current text-blue-500"></i>
+          <p class="text-sm">devproduction.vn@gmail.com</p>
+        </div>
+      </div>
+      <div class="mt-2 mb-16">
+        <h1 class="text-4xl mb-2">Socials</h1>
+        <div class="flex gap-3">
+          <i class="fab fa-twitter mr-2 fill-current text-white-500"></i>
+          <i class="fab fa-instagram mr-2 fill-current text-white-500"></i>
+          <i class="fab fa-facebook-f mr-2 fill-current text-white-500"></i>
+          <i class="fab fa-instagram mr-2 fill-current text-white-500"></i>
+        </div>
+      </div>
+    </div>
+    <p class="my-10 text-center font-thin text-xl  ">© 2024 Codefest™. All Rights Reserved.</p>
+  </div>
+  <!-- ======================================================================= -->
+
+  <script src="js/Tailwind-3.4.5"></script>
+  <script src="js/flowbite.min.js"></script>
+</body>
+
+</html>
